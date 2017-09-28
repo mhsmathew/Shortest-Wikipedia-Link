@@ -8,19 +8,13 @@ import com.antverdovsky.wikideg.sep.Separation;
 import com.antverdovsky.wikideg.util.Logger;
 import com.antverdovsky.wikideg.util.Utilities;
 
-/**
- * Main Class responsible for taking input and getting the separation from the
- * Separation class.
- */
+
 public class Main {
-	// Command line arguments booleans
+
 	private static boolean doDisplayTimeArg = false;
 	private static boolean doDisplayDebugArg = false;
 	private static boolean doDisplayHelp = false;
-	
-	/**
-	 * Prints out the help information.
-	 */
+
 	private static void printHelp() {
 		System.out.println("Command Line Arguments: ");
 		System.out.println("\t-h : Prints out these help instructions.");
@@ -130,9 +124,11 @@ public class Main {
 			}
 		}
 		
-		// Print out the time taken, if applicable
+		// Print out the time taken
+		/*
 		int deltaTime = (int)(endTime - startTime);
 		if (Main.doDisplayTimeArg)
 			System.out.println("Time taken: " + deltaTime + "ms.");
+			*/
 	}
 }
